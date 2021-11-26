@@ -58,7 +58,7 @@ font = cv.FONT_HERSHEY_SIMPLEX
 fontScale = 2
 
 direction = 0
-LEFT = pygame.image.load('arrow.png')
+LEFT = pygame.image.load('./imgs/arrow.png')
 LEFT_rect = LEFT.get_rect()
 LEFT_rect.x, LEFT_rect.y = (size[0]-140, 20)
 
@@ -113,8 +113,8 @@ cap = cv.VideoCapture(0)
 class Car(pygame.sprite.Sprite):
     def __init__(self):
         super(Car, self).__init__()
-        self.image = pygame.image.load('car4.png')
-        self.o_img = pygame.image.load('car4.png')
+        self.image = pygame.image.load('./imgs/car4.png')
+        self.o_img = pygame.image.load('./imgs/car4.png')
         self.rect = self.image.get_rect()
         self.width = self.rect.size[0]
         self.height = self.rect.size[1]
@@ -154,7 +154,7 @@ class Car(pygame.sprite.Sprite):
 
 class Traffic_Light():
     def __init__(self):
-        self.image = pygame.image.load('traffic.png')
+        self.image = pygame.image.load('./imgs/traffic.png')
         self.rect = self.image.get_rect()
         self.width = self.rect.size[0]
         self.height = self.rect.size[1]
@@ -163,7 +163,7 @@ class Traffic_Light():
 
 class Dot:
     def __init__(self):
-        self.image = pygame.image.load('dot.png')
+        self.image = pygame.image.load('./imgs/dot.png')
         self.rect = self.image.get_rect()
         self.width = self.rect.size[0]
         self.height = self.rect.size[1]
@@ -213,7 +213,7 @@ class Dot:
 class StopLine(pygame.sprite.Sprite):
     def __init__(self, x, y):
         super(StopLine, self).__init__()
-        self.image = pygame.image.load('dot.png')
+        self.image = pygame.image.load('./imgs/dot.png')
         self.rect = self.image.get_rect()
         self.rect.x = (x[1][0]+y[1][0])//2
         self.rect.y = (x[1][1]+y[1][1])//2 
