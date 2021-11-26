@@ -2,7 +2,7 @@
 
 [유튜브 링크] https://www.youtube.com/watch?v=zI0hHpvVBKo&t=109s&ab_channel=CODEGAP
 
-##환경 설정
+## 환경 설정
 ```
 conda create -n {이름} python=3.8
 conda activate {이름}
